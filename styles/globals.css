@@ -626,7 +626,7 @@ footer.main_footer {
     display: flex;
     gap: 1rem;
     justify-content: center;
-    margin-left: -10%; /* Move levemente para a direita */
+    margin-left: -20%; /* Move levemente para a direita */
 }
 
 .social-buttons a {
