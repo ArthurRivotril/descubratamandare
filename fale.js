@@ -11,6 +11,6 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 });
 
 document.getElementById('instagram-button').addEventListener('click', function() {
-    const instagramProfile = 'https://www.instagram.com/arthur_rivotril/';
+    const instagramProfile = 'https://instagram.com/descubra_tamandare';
     window.open(instagramProfile, '_blank');
 });
