@@ -671,7 +671,7 @@ img, .botao, .outros-elementos {
 
 .page-inner-content {
     margin-left: auto; /* Empurra o conteúdo para a direita */
-    margin-right: auto; /* Ajuste para deslocar mais à direita */
+    margin-right: none; /* Ajuste para deslocar mais à direita */
     max-width: 100%; /* Para manter o conteúdo dentro de limites */
     position: relative;
 }
