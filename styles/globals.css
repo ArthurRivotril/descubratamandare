@@ -278,7 +278,7 @@ main{
         }
     
         img, .botao {
-            width: 80%; /* Garante que elementos ocupem a largura total */
+            width: 100%; /* Garante que elementos ocupem a largura total */
         }
     }
 
