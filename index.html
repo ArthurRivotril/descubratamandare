@@ -27,21 +27,23 @@
     <body>
         <!-- Barra de Pesquisa -->
         <div class="search-container">
-            <form id="searchBox" onsubmit="return false;">
-                <input 
-                  type="text" 
-                  id="search-input" 
-                  placeholder="faça uma pesquisa" 
-                  autocomplete="off"
-                />
-                <button id="search-button" type="button">🔍</button>
-            </form>
-            <p>sua pesquisa aparecerá marcada 
-            <p>com a cor amarela dentro do site</p>
-        </div>
-        
-
-        <script src="search.js"></script>
+          <form id="searchBox" onsubmit="return false;">
+              <input type="text" id="search-input" placeholder="Faça uma pesquisa" autocomplete="off">
+              <button id="search-button" type="button">🔍</button>
+          </form>
+          <p>Sua pesquisa aparecerá marcada com a cor amarela dentro do site</p>
+      </div>
+  
+      <!-- Botões de Navegação -->
+      <div id="nav-buttons">
+          <p class="instructions">Use os botões para navegar pelos resultados encontrados:</p>
+          <button id="prev-button" title="Ir para o resultado anterior">⬆️</button>
+          <button id="next-button" title="Ir para o próximo resultado">⬇️</button>
+      </div>
+  
+      <!-- Conexão dos Scripts -->
+      <script src="search.js"></script>
+      <script src="botao.js"></script>
     </body>
 
 

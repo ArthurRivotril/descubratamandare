@@ -447,26 +447,93 @@ section.slider {
 
 /* Barra de Pesquisa */
 
-  
-  form {
-    display: flex;
-    align-items: center;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  #searchInput {
+#search-input {
     flex: 1;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ddd;
-    border-radius: 4px 0 0 4px;
+    border-radius: 4px;
     outline: none;
-  }
-  
-  #searchInput:focus {
+}
+
+#search-input:focus {
     border-color: #007bff;
-  }
+}
+
+#search-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+    background-color: #0056b3;
+}
+
+/* Botões fixos no canto inferior direito */
+#nav-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    z-index: 1000; /* Fica acima do conteúdo da página */
+    text-align: center;
+}
+
+#nav-buttons .instructions {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+#nav-buttons button {
+    padding: 10px;
+    font-size: 14px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#nav-buttons button:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    #search-input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #search-button {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    #nav-buttons button {
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    #nav-buttons .instructions {
+        font-size: 10px;
+    }
+}
   
   
   button {
@@ -482,15 +549,6 @@ section.slider {
     font-size: 16px;
   }
   
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Destaque de Resultados */
-  .searchable.highlight {
-    background-color: #ffeb3b;
-  }
-
   /* Footer Geral */
 footer.main_footer {
     background-color: brown;
