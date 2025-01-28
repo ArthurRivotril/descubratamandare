@@ -1,4 +1,4 @@
-// Variáveis para armazenar os elementos encontrados e o índice atual
+
 let matches = [];
 let currentIndex = -1;
 
