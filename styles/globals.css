@@ -854,13 +854,15 @@
     
     #nav-buttons {
         position: fixed;
-        bottom: 350px;
+        bottom: 50%; /* Move para cima 50% */
         right: 20px;
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 5px;
-        z-index: 1000; /* Garante que fique acima do conteúdo do site */
-    }
+        z-index: 1000;
+        text-align: center;
+        transform: translateY(50%); }
     
     #nav-buttons button {
         background-color: #007BFF;
@@ -879,17 +881,16 @@
     }
     
     /* Responsividade para telas menores */
-    @media (max-width: 768px) {
+    @media (max-width: 480px) {
         #nav-buttons {
-            bottom: 10px;
-            right: 10px;
-            gap: 3px;
+            bottom: 50%; /* Mantém no mesmo lugar no mobile */
+            right: 10px; /* Pequeno ajuste lateral */
         }
     
         #nav-buttons button {
-            width: 40px;
-            height: 40px;
-            font-size: 12px; /* Ajusta o tamanho da fonte, caso necessário */
+            width: 45px;
+            height: 45px;
+            font-size: 14px;
         }
     }
     
