@@ -26,7 +26,7 @@ function enviarWhatsApp() {
     let nome = document.getElementById("nome").value;
     let instagram = document.getElementById("instagram").value;
     let telefone = document.getElementById("telefone").value;
-    let nincho = document.getElementById("nincho").value; // Capturando o nicho
+    
 
     let mensagem = `Olá! Fiz o cadastro no plano *${plano}* da Descubra Tamandaré.%0A%0A*Nome:* ${nome}%0A*Instagram:* ${instagram}%0A*Telefone:* ${telefone}%0A*Nicho:* ${nincho}`; // Adicionando o nicho na mensagem
 
